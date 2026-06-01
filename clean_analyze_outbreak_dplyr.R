@@ -12,7 +12,12 @@
 
 
 # ---- Read data ----
-linelist <- read_csv("cdsc_new_year_outbreak_linelist.csv", show_col_types = FALSE)
+feat/change-case_def
+config <- yaml::read_yaml("config.yaml")
+linelist <- read_csv(config$Path$data_file_address)
+=======
+
+main
 
 # Exposure event datetime (assumed)
 party_dt <- ymd_hm("2026-01-01 20:00", tz = "UTC")
