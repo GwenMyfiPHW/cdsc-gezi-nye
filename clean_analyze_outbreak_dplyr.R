@@ -15,7 +15,6 @@
 config <- yaml::read_yaml("config.yaml")
 linelist <- read_csv(config$Path$data_file_address)
 
-
 # Exposure event datetime (assumed)
 party_dt <- ymd_hm("2026-01-01 20:00", tz = "UTC")
 
